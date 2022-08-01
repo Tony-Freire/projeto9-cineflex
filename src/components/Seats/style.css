@@ -1,0 +1,77 @@
+.seats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+
+  padding: 20px 0 0 24px;
+}
+
+.seat {
+  height: 26px;
+  width: 26px;
+
+  border-radius: 12px;
+  border: 1px solid #808f9d;
+
+  background-color: #c3cfd9;
+  margin-bottom: 10px;
+
+  font: 400 11px/13px "Roboto";
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.unavailable {
+  background-color: #fbe192;
+  border: 1px solid #f7c52b;
+}
+
+.selected {
+  background-color: #8dd7cf;
+  border: 1px solid #45bdb0;
+}
+
+.caption {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.seat-caption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 16px;
+}
+
+.seat-caption p {
+  font: 400 13px "Roboto";
+  color: #4e5a65;
+}
+
+.user-infos {
+  padding: 40px 0 57px 24px;
+}
+
+.user-infos p {
+  font: 400 18px/21px "Roboto";
+  margin-bottom: 5px;
+}
+/* 
+.input-infos {
+  height: 51px;
+  width: 90%;
+
+  border-radius: 3px;
+  border: 1px solid #d4d4d4;
+
+  margin-bottom: 10px;
+  padding-left: 18px;
+}
+
+.input-infos::placeholder {
+  font: italic 400 18px/21px "Roboto";
+  color: #afafaf;
+} */

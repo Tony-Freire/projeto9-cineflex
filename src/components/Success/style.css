@@ -1,0 +1,16 @@
+.info-sucess {
+  width: 80%;
+  padding-left: 30px;
+}
+
+.info-sucess h2 {
+  font: 700 24px/28px "Roboto";
+  color: #293845;
+  padding-bottom: 15px;
+}
+
+.info-sucess p {
+  font: 400 22px/26px "Roboto";
+  color: #293845;
+  padding-bottom: 5px;
+}

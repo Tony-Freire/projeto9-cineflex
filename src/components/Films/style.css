@@ -1,0 +1,36 @@
+.films-page {
+    width: 100vw;
+    height: 100vh;
+    margin-top: 67px;
+    overflow-y: scroll;
+  }
+  
+  .films-list {
+    display: flex;
+    gap: 46px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 0 20px 0;
+  }
+  
+  .film-poster {
+    height: 209px;
+    width: 145px;
+  
+    border-radius: 3px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .film-poster img {
+    height: 193px;
+    width: 129px;
+    background-size: cover;
+  }
+  .select-text {
+    font: 400 24px/28px "Roboto";
+    color: #293845;
+    text-align: center;
+    padding-top: 20px;}
