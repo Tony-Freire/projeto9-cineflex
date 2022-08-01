@@ -2,42 +2,52 @@ import axios from "axios";
 import { useEffect,useState } from "react";
 import styled from "styled-components";
 import Movie from "../movie/Movie";
-
-
+import{ SelfBuildingSquareSpinner} from 'react-epic-spinners'
 
 
 export default function HomePage(){
-const [movies,setMovies]=useState([]);
-const URL="https://mock-api.driven.com.br/api/v7/cineflex/movies"
 
+  const [movies,setMovies]=useState([]);
+  
+  
+     useEffect(()=>{
+      const URL="https://mock-api.driven.com.br/api/v7/cineflex/movies";
+      const response = axios.get(URL);
+      
+      response.then(({data})=> setMovies(data));
+      response.catch(({response})=> alert(response.statusText));
+     },[])
+     function moviesTheatersRender() 
+     {
+      if(movies.length>0)
+      {
+          return movies.map(({id,posterURL,title})=>(
+              
+              <Movie
+              key={id}
+              id={id}
+              title={title}
+              poster={posterURL}/>))
+      }
+      else
+      {
+          return <SelfBuildingSquareSpinner color="#C3CFD9" />
+      }
+      
+      } 
 
-   const response = axios.get(URL);
-
-   useEffect(()=>{
-    response.then(({data})=> setMovies(data));
-    response.catch(({response})=> alert(response.statusText));
-   },[])
-   
     return(
         <>
         <Container>
             <h1>Selecione o filme</h1>
          <Posters>
-         {
-        movies.map(movie=>{const {id,posterURL,title}=movie
-            
-             return <Movie
-              key={id}
-              id={id}
-              title={title}
-              poster={posterURL}/>
-         } 
-         )}
+         {moviesTheatersRender()}
          </Posters>
          </Container>
         </>
     )
 }
+
 const Container = styled.div`
 margin: 70px 30px;
 display: flex;

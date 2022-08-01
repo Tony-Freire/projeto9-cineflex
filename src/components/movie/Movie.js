@@ -7,10 +7,11 @@ import styled from "styled-components"
 export default function Movie({id,title,poster})
 {
     return (
-        <Link to={`/sessao/${id}`}>
+        <Link to={`/filme/${id}`}>
         <Poster>
             <img src={poster} alt={title}/>
-        </Poster></Link>
+        </Poster>
+        </Link>
     )
 }
 const Poster = styled.div`
