@@ -3,11 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-<<<<<<< HEAD
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "^4.0.3"
-=======
     "axios": "^0.27.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -17,7 +12,6 @@
     "react-spinners": "^0.13.4",
     "react-switch": "^7.0.0",
     "styled-components": "^5.3.5"
->>>>>>> 85f43100c0dcc8c7e4e452eb623f1ae44a549e20
   },
   "scripts": {
     "start": "react-scripts start",
@@ -41,11 +35,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-<<<<<<< HEAD
-=======
   },
   "devDependencies": {
     "eslint-plugin-react-hooks": "^4.6.0"
->>>>>>> 85f43100c0dcc8c7e4e452eb623f1ae44a549e20
   }
 }
